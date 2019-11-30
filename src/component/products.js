@@ -30,7 +30,7 @@ function Danhsach() {
           Khuyến mãi
         </Radio.Button>
       </Radio.Group>
-      <Link to="/create-products">
+      <Link to="/createproducts">
         <Button style={{ margin: "0 8px" }} type="primary">
           Thêm mới
         </Button>

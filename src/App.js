@@ -1,7 +1,8 @@
 import React from "react";
-import { Layout, Menu, Icon} from "antd";
+import { Layout, Menu, Icon } from "antd";
 import Home from "./component/home";
 import Danhsach from "./component/products";
+import AddProduct from "./component/addproducts";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 const { Header, Footer, Sider } = Layout;
 export default class App extends React.Component {
@@ -40,9 +41,8 @@ export default class App extends React.Component {
             <Header style={{ background: "#fff", padding: 0 }}></Header>
             <Route exact path="/" component={Home} />
             <Route path="/products" component={Danhsach} />
-            {/*
-            <Route exact path="/create-products" component={AddProduct} />
-            <Route path="/products/:id" component={Edit} /> */}
+            <Route exact path="/createproducts" component={AddProduct} />
+            {/* <Route path="/products/:id" component={Edit}/> */}
 
             <Footer style={{ textAlign: "center" }}>
               SnickShop-Admin ©2019 Created by Me
